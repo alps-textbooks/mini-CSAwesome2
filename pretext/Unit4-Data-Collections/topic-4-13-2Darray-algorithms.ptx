@@ -396,10 +396,21 @@ public class Duplicates
             {
                 for (int row2 = row; row2 &lt; nums.length; row2++)
                 {
-                    for (int col2 = col + 1; col2 &lt; nums[0].length; col2++)
+                    int startCol;
+                    if (row2 == row) 
                     {
-                        if (nums[row][col] == nums[row2][col2])
+                        startCol = col + 1;
+                    } 
+                    else 
+                    {
+                        startCol = 0;
+                    }
+                    for (int col2 = startCol; col2 &lt; nums[row2].length; col2++) 
+                    {
+                        if (nums[row][col] == nums[row2][col2]) 
                         {
+                            System.out.println("Duplicate " + nums[row][col] + " found at: (" 
+                                    + row + ", " + col + ") and (" + row2 + ", " + col2 + ")");
                             return false;
                         }
                     }
@@ -412,7 +423,7 @@ public class Duplicates
     public static void main(String[] args)
     {
         int[][] matrix = { {3, 2, 3}, {4, 3, 6}, {8, 9, 3}, {10, 3, 3}};
-        System.out.println(noDups(matrix));
+        System.out.println("No dups: " + noDups(matrix));
     }
 }
         </code>
@@ -512,8 +523,8 @@ public class RunestoneTests extends CodeTestHelper
     <title>Review and FRQ Practice with 2D arrays</title>
     <p>
       This lesson ends the 2D arrays section of this unit. You can now do the
-      following review lessons and FRQs at the end of the unit and College Board
-      Progress Checks in the AP Classroom.
+      following review lessons and FRQs at the end of the unit. You can wait to do
+      College Board Progress Check C in the AP Classroom at the end of the unit.
     </p>
 
     <p>
@@ -549,6 +560,9 @@ public class RunestoneTests extends CodeTestHelper
     <p>
       <ul>
         <li>
+          <url href="FRQ4-Arrays2D.html" visual="FRQ4-Arrays2D.html">FRQ 4 on 2D Array</url>
+        </li>
+        <li>
           <url href="grayImageA.html" visual="grayImageA.html">Gray Image A FRQ</url>
         </li>
 
@@ -557,12 +571,10 @@ public class RunestoneTests extends CodeTestHelper
         </li>
 
         <li>
-          <url href="routeCipherA.html" visual="routeCipherA.html">Route Cipher A FRQ</url>
+          <url href="routeCipherA.html" visual="routeCipherAB.html">Route Cipher A and B FRQ</url>
         </li>
 
-        <li>
-          <url href="routeCipherB.html" visual="routeCipherB.html">Route Cipher B FRQ</url>
-        </li>
+        
       </ul>
     </p>
 

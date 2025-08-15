@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="topic-1-8-toggle-write-code">
+<section xml:id="u2b-toggle-write-code">
   <time minutes="90" />
-  <title>Unit 1 Write Code for Toggle Code</title>
+  <title>Unit 2b Write Code for Toggle Code</title>
   <p>
-    This is the write code problems associated with the mixed up code problems.
+    This is the loop write code problems associated with the mixed up code problems.
   </p>
 
-  <activity label="u1_muc_wc1">
+  <activity label="u2b_muc_wc1" xml:id="u2b_muc_wc1">
     <statement>
       <p>
-        Write code that prints Maria’s first name on one line and her last name
-        on the next line.
+        Finish the code to print out all the values from 20 to 30 (20, 21, 22, …
+        30).
       </p>
     </statement>
 
@@ -21,16 +21,13 @@ public class Test1
 {
     public static void main(String[] args)
     {
-        String firstName = "Maria";
-        String lastName = "Hernandez";
-
         // Add your code here
 
     }
 }
       </code>
       <tests>
-// ch4ex1muc
+// ch6ex1muc
 import static org.junit.Assert.*;
 
 import org.junit.*;
@@ -48,558 +45,7 @@ public class RunestoneTests extends CodeTestHelper
     public void test1()
     {
         String output = getMethodOutput("main");
-        String expect = "Maria\nHernandez";
-
-        boolean passed = getResults(expect, output, "Running main");
-        assertTrue(passed);
-    }
-}
-      </tests>
-    </program>
-  </activity>
-
-  <activity label="u1_muc_wc2">
-    <statement>
-      <p>
-        Write code that prints the poem <c>Roses are red</c> <c>Violets are
-        blue</c> <c>Sugar is sweet</c> <c>And so are you</c> with 1 sentence on
-        each line.
-      </p>
-    </statement>
-
-    <program interactive="activecode" language="java">
-      <code>
-public class Test1
-{
-    public static void main(String[] args)
-    {
-        // Add your code here
-
-    }
-}
-      </code>
-      <tests>
-// ch4ex2muc
-import static org.junit.Assert.*;
-
-import org.junit.*;
-
-import java.io.*;
-
-public class RunestoneTests extends CodeTestHelper
-{
-    public RunestoneTests()
-    {
-        super("Test1");
-    }
-
-    @Test
-    public void test1()
-    {
-        String output = getMethodOutput("main");
-        String expect = "Roses are red\nViolets are blue\nSugar is sweet\nAnd so are you";
-
-        boolean passed = getResults(expect, output, "Running main");
-        assertTrue(passed);
-    }
-}
-      </tests>
-    </program>
-  </activity>
-
-  <activity label="u1_muc_wc3">
-    <statement>
-      <p>
-        Write code that prints Marcus’s name on one line and his favorite color
-        (Blue) on the next line.
-      </p>
-    </statement>
-
-    <program interactive="activecode" language="java">
-      <code>
-public class Test1
-{
-    public static void main(String[] args)
-    {
-        String name = "Marcus";
-        String favoriteColor = "Blue";
-
-        // Add your code here
-
-    }
-}
-      </code>
-      <tests>
-// ch4ex3muc
-import static org.junit.Assert.*;
-
-import org.junit.*;
-
-import java.io.*;
-
-public class RunestoneTests extends CodeTestHelper
-{
-    public RunestoneTests()
-    {
-        super("Test1");
-    }
-
-    @Test
-    public void test1()
-    {
-        String output = getMethodOutput("main");
-        String expect = "Marcus\nBlue";
-
-        boolean passed = getResults(expect, output, "Running main");
-        assertTrue(passed);
-    }
-}
-      </tests>
-    </program>
-  </activity>
-
-  <activity label="u1_muc_wc4">
-    <statement>
-      <p>
-        Write code that figures out the cost for each shirt if you buy 2 and get
-        the third free and they are originally $45 each. Make sure your answer
-        is a double.
-      </p>
-    </statement>
-
-    <program interactive="activecode" language="java">
-      <code>
-public class Test1
-{
-    public static void main(String[] args)
-    {
-        double price = 45;
-        // Add your code here
-
-    }
-}
-      </code>
-      <tests>
-// ch3ex1muc
-import static org.junit.Assert.*;
-
-import org.junit.*;
-
-import java.io.*;
-
-public class RunestoneTests extends CodeTestHelper
-{
-    public RunestoneTests()
-    {
-        super("Test1");
-    }
-
-    @Test
-    public void test1()
-    {
-        String output = getMethodOutput("main");
-        String expect = "30.0";
-
-        boolean passed = getResults(expect, output, "Running main");
-        assertTrue(passed);
-    }
-}
-      </tests>
-    </program>
-  </activity>
-
-  <activity label="u1_muc_wc5">
-    <statement>
-      <p>
-        Write code that figures out the cost per person for a dinner including
-        the tip. Assume the bill was $89.23, there are three people, and the tip
-        should be 20%. Make sure your answer is a double.
-      </p>
-    </statement>
-
-    <program interactive="activecode" language="java">
-      <code>
-public class Test1
-{
-    public static void main(String[] args)
-    {
-        double bill = 89.23;
-        // Add your code here
-
-    }
-}
-      </code>
-      <tests>
-// ch3ex2muc
-import static org.junit.Assert.*;
-
-import org.junit.*;
-
-import java.io.*;
-
-public class RunestoneTests extends CodeTestHelper
-{
-    public RunestoneTests()
-    {
-        super("Test1");
-    }
-
-    @Test
-    public void test1()
-    {
-        String output = getMethodOutput("main");
-        double result = Double.parseDouble(output);
-        double expect = 35.692;
-
-        boolean passed = getResults(expect, result, "Running main");
-        assertTrue(passed);
-    }
-}
-      </tests>
-    </program>
-  </activity>
-
-  <activity label="u1_muc_wc6">
-    <statement>
-      <p>
-        Write code that calculates and prints the number of seconds in 5 days.
-      </p>
-    </statement>
-
-    <program interactive="activecode" language="java">
-      <code>
-public class Test1
-{
-    public static void main(String[] args)
-    {
-        // Add your code here
-
-    }
-}
-      </code>
-      <tests>
-// ch3ex4muc
-import static org.junit.Assert.*;
-
-import org.junit.*;
-
-import java.io.*;
-
-public class RunestoneTests extends CodeTestHelper
-{
-    public RunestoneTests()
-    {
-        super("Test1");
-    }
-
-    @Test
-    public void test1()
-    {
-        String output = getMethodOutput("main");
-        String expect = "432000";
-
-        boolean passed = getResults(expect, output, "Running main");
-        assertTrue(passed);
-    }
-}
-      </tests>
-    </program>
-  </activity>
-
-  <activity label="u1_muc_wc7">
-    <statement>
-      <p>
-        Write code that calculates and prints the number of months it would take
-        you to save $500 if you make $50 a week. Make sure your answer is a
-        double.
-      </p>
-    </statement>
-
-    <program interactive="activecode" language="java">
-      <code>
-public class Test1
-{
-    public static void main(String[] args)
-    {
-        // Add your code here
-
-    }
-}
-      </code>
-      <tests>
-// ch3ex5muc
-import static org.junit.Assert.*;
-
-import org.junit.*;
-
-import java.io.*;
-
-public class RunestoneTests extends CodeTestHelper
-{
-    public RunestoneTests()
-    {
-        super("Test1");
-    }
-
-    @Test
-    public void test1()
-    {
-        String output = getMethodOutput("main");
-        String expect = "2.5";
-
-        boolean passed = getResults(expect, output, "Running main");
-        assertTrue(passed);
-    }
-}
-      </tests>
-    </program>
-  </activity>
-
-  <activity label="u1_muc_wc8">
-    <statement>
-      <p>
-        Write code that prints the name on one line followed by the age on the
-        next line. Your output should look like <c>Your name is Layla</c> and
-        <c>Your age is 16</c>.
-      </p>
-    </statement>
-
-    <program interactive="activecode" language="java">
-      <code>
-public class Test1
-{
-    public static void main(String[] args)
-    {
-        String name = "Layla";
-        String age = "16";
-
-        // Add your code here
-
-    }
-}
-      </code>
-      <tests>
-// ch4ex5muc
-import static org.junit.Assert.*;
-
-import org.junit.*;
-
-import java.io.*;
-
-public class RunestoneTests extends CodeTestHelper
-{
-    public RunestoneTests()
-    {
-        super("Test1");
-    }
-
-    @Test
-    public void test1()
-    {
-        String output = getMethodOutput("main");
-        String expect = "Your name is Layla\nYour age is 16";
-
-        boolean passed = getResults(expect, output, "Running main");
-        assertTrue(passed);
-    }
-}
-      </tests>
-    </program>
-  </activity>
-
-  <activity label="u1_muc_wc9">
-    <statement>
-      <p>
-        Write code that prints the name on one line and the favorite food on the
-        next line. Your output should look like:
-      </p>
-
-      <pre>
-Your name is Julian
-Your favorite food is chicken wings
-      </pre>
-    </statement>
-
-    <program interactive="activecode" language="java">
-      <code>
-public class Test1
-{
-    public static void main(String[] args)
-    {
-        String name = "Julian";
-        String food = "chicken wings";
-
-        // Add your code here
-
-    }
-}
-      </code>
-      <tests>
-// ch4ex6muc
-import static org.junit.Assert.*;
-
-import org.junit.*;
-
-import java.io.*;
-
-public class RunestoneTests extends CodeTestHelper
-{
-    public RunestoneTests()
-    {
-        super("Test1");
-    }
-
-    @Test
-    public void test1()
-    {
-        String output = getMethodOutput("main");
-        String expect = "Your name is Julian\nYour favorite food is chicken wings";
-
-        boolean passed = getResults(expect, output, "Running main");
-        assertTrue(passed);
-    }
-}
-      </tests>
-    </program>
-  </activity>
-
-  <activity label="u1_muc_wc10">
-    <statement>
-      <p>
-        Write code that calculates and prints the cost of a trip that is 200
-        miles when the price of gas is 2.20 and the miles per gallon is 42. Make
-        sure your answer is a double.
-      </p>
-    </statement>
-
-    <program interactive="activecode" language="java">
-      <code>
-public class Test1
-{
-    public static void main(String[] args)
-    {
-        // Add your code here
-
-    }
-}
-      </code>
-      <tests>
-// ch3ex6muc
-import static org.junit.Assert.*;
-
-import org.junit.*;
-
-import java.io.*;
-
-public class RunestoneTests extends CodeTestHelper
-{
-    public RunestoneTests()
-    {
-        super("Test1");
-    }
-
-    @Test
-    public void test1()
-    {
-        String output = getMethodOutput("main");
-        String expect = "10.476190476190476";
-
-        boolean passed = getResults(expect, output, "Running main");
-        assertTrue(passed);
-    }
-}
-      </tests>
-    </program>
-  </activity>
-
-  <activity label="u1_muc_wc11">
-    <statement>
-      <p>
-        Write code that calculates how many miles you can go on half a tank of
-        gas if the miles per gallon is 26 and your tank holds 15 gallons.
-      </p>
-    </statement>
-
-    <program interactive="activecode" language="java">
-      <code>
-public class Test1
-{
-    public static void main(String[] args)
-    {
-        // Add your code here
-
-    }
-}
-      </code>
-      <tests>
-// ch3ex7muc
-import static org.junit.Assert.*;
-
-import org.junit.*;
-
-import java.io.*;
-
-public class RunestoneTests extends CodeTestHelper
-{
-    public RunestoneTests()
-    {
-        super("Test1");
-    }
-
-    @Test
-    public void test1()
-    {
-        String output = getMethodOutput("main");
-        String expect = "195";
-
-        boolean passed = getResults(expect, output, "Running main");
-        assertTrue(passed);
-    }
-}
-      </tests>
-    </program>
-  </activity>
-
-  <activity label="u1_muc_wc12">
-    <statement>
-      <p>
-        Write code that calculates and prints how many chicken wings you can buy
-        with $3.50 if the wings are $.60 each. Make sure your answer is an
-        integer.
-      </p>
-    </statement>
-
-    <program interactive="activecode" language="java">
-      <code>
-public class Test1
-{
-    public static void main(String[] args)
-    {
-        // Add your code here
-
-    }
-}
-      </code>
-      <tests>
-// ch3ex8muc
-import static org.junit.Assert.*;
-
-import org.junit.*;
-
-import java.io.*;
-
-public class RunestoneTests extends CodeTestHelper
-{
-    public RunestoneTests()
-    {
-        super("Test1");
-    }
-
-    @Test
-    public void test1()
-    {
-        String output = getMethodOutput("main");
-        String expect = "5";
+        String expect = "20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30";
 
         boolean passed = getResults(expect, output, "Running main");
         assertTrue(passed);
@@ -608,12 +54,10 @@ public class RunestoneTests extends CodeTestHelper
     @Test
     public void test2()
     {
-        String output = getMethodOutput("main");
-        String expect = "5";
-
-        boolean passed = !output.contains(".");
-
-        passed = getResults(expect, output, "Checking for integer output", passed);
+        String code = getCodeWithoutComments();
+        int count = countOccurences(code, "while") + countOccurences(code, "for");
+        boolean passed = count &gt; 0;
+        getResults("1 loop", count + " loop(s)", "Counting number of loops", passed);
         assertTrue(passed);
     }
 }
@@ -621,11 +65,10 @@ public class RunestoneTests extends CodeTestHelper
     </program>
   </activity>
 
-  <activity label="u1_muc_wc13">
+  <activity label="u2b_muc_wc2" xml:id="u2b_muc_wc2">
     <statement>
       <p>
-        Write code that calculates how much you will have to pay for an item
-        that is 60 percent off the original price of $52.99.
+        Finish the code to print a countdown from 15 to 0 (15, 14, 13, … 0).
       </p>
     </statement>
 
@@ -635,16 +78,13 @@ public class Test1
 {
     public static void main(String[] args)
     {
-        double price = 52.99;
-        double discount = 0.6;
-
         // Add your code here
 
     }
 }
       </code>
       <tests>
-// ch3ex9muc
+// ch6ex2muc
 import static org.junit.Assert.*;
 
 import org.junit.*;
@@ -662,58 +102,7 @@ public class RunestoneTests extends CodeTestHelper
     public void test1()
     {
         String output = getMethodOutput("main");
-        String expect = "21.196";
-
-        boolean passed = getResults(expect, output, "Running main");
-        assertTrue(passed);
-    }
-}
-      </tests>
-    </program>
-  </activity>
-
-  <activity label="u1_muc_wc14">
-    <statement>
-      <p>
-        Write code that calculates and prints how much the per item costs is for
-        shorts that are buy 2 and get the third free. The shorts are $39.99
-        each.
-      </p>
-    </statement>
-
-    <program interactive="activecode" language="java">
-      <code>
-public class Test1
-{
-    public static void main(String[] args)
-    {
-        double price = 39.99;
-
-        // Add your code here
-
-    }
-}
-      </code>
-      <tests>
-// ch3ex10muc
-import static org.junit.Assert.*;
-
-import org.junit.*;
-
-import java.io.*;
-
-public class RunestoneTests extends CodeTestHelper
-{
-    public RunestoneTests()
-    {
-        super("Test1");
-    }
-
-    @Test
-    public void test1()
-    {
-        String output = getMethodOutput("main");
-        String expect = "26.66";
+        String expect = "15\n14\n13\n12\n11\n10\n9\n8\n7\n6\n5\n4\n3\n2\n1\n0";
 
         boolean passed = getResults(expect, output, "Running main");
         assertTrue(passed);
@@ -722,18 +111,487 @@ public class RunestoneTests extends CodeTestHelper
     @Test
     public void test2()
     {
-        boolean passed = checkCodeContains("*2");
-        assertTrue(passed);
-    }
-
-    @Test
-    public void test3()
-    {
-        boolean passed = checkCodeContains("/3");
+        String code = getCodeWithoutComments();
+        int count = countOccurences(code, "while") + countOccurences(code, "for");
+        boolean passed = count &gt; 0;
+        getResults("1 loop", count + " loop(s)", "Counting number of loops", passed);
         assertTrue(passed);
     }
 }
       </tests>
     </program>
   </activity>
+
+  <activity label="u2b_muc_wc3" xml:id="u2b_muc_wc3">
+    <statement>
+      <p>
+        Finish the code to print up from 0 to 50 by 5 (0, 5, 10, 15 … 50).
+      </p>
+    </statement>
+
+    <program interactive="activecode" language="java">
+      <code>
+public class Test1
+{
+    public static void main(String[] args)
+    {
+        // Add your code here
+
+    }
+}
+      </code>
+      <tests>
+// ch6ex3muc
+import static org.junit.Assert.*;
+
+import org.junit.*;
+
+import java.io.*;
+
+public class RunestoneTests extends CodeTestHelper
+{
+    public RunestoneTests()
+    {
+        super("Test1");
+    }
+
+    @Test
+    public void test1()
+    {
+        String output = getMethodOutput("main");
+        String expect = "0\n5\n10\n15\n20\n25\n30\n35\n40\n45\n50";
+
+        boolean passed = getResults(expect, output, "Running main");
+        assertTrue(passed);
+    }
+
+    @Test
+    public void test2()
+    {
+        String code = getCodeWithoutComments();
+        int count = countOccurences(code, "while") + countOccurences(code, "for");
+        boolean passed = count &gt; 0;
+        getResults("1 loop", count + " loop(s)", "Counting number of loops", passed);
+        assertTrue(passed);
+    }
+}
+      </tests>
+    </program>
+  </activity>
+
+  <activity label="u2b_muc_wc4" xml:id="u2b_muc_wc4">
+    <statement>
+      <p>
+        Finish the code to print out the values from 0 to 100 by 20’s (0, 20,
+        40, .. 100).
+      </p>
+    </statement>
+
+    <program interactive="activecode" language="java">
+      <code>
+public class Test1
+{
+    public static void main(String[] args)
+    {
+        // Add your code here
+
+    }
+}
+      </code>
+      <tests>
+// ch6ex4muc
+import static org.junit.Assert.*;
+
+import org.junit.*;
+
+import java.io.*;
+
+public class RunestoneTests extends CodeTestHelper
+{
+    public RunestoneTests()
+    {
+        super("Test1");
+    }
+
+    @Test
+    public void test1()
+    {
+        String output = getMethodOutput("main");
+        String expect = "0\n20\n40\n60\n80\n100";
+
+        boolean passed = getResults(expect, output, "Running main");
+        assertTrue(passed);
+    }
+
+    @Test
+    public void test2()
+    {
+        String code = getCodeWithoutComments();
+        int count = countOccurences(code, "while") + countOccurences(code, "for");
+        boolean passed = count &gt; 0;
+        getResults("1 loop", count + " loop(s)", "Counting number of loops", passed);
+        assertTrue(passed);
+    }
+}
+      </tests>
+    </program>
+  </activity>
+
+  <activity label="u2b_muc_wc5" xml:id="u2b_muc_wc5">
+    <statement>
+      <p>
+        Finish the code to print out the values from 100 to 0 by 10’s (100, 90,
+        80, … 0).
+      </p>
+    </statement>
+
+    <program interactive="activecode" language="java">
+      <code>
+public class Test1
+{
+    public static void main(String[] args)
+    {
+        // Add your code here
+
+    }
+}
+      </code>
+      <tests>
+// ch6ex5muc
+import static org.junit.Assert.*;
+
+import org.junit.*;
+
+import java.io.*;
+
+public class RunestoneTests extends CodeTestHelper
+{
+    public RunestoneTests()
+    {
+        super("Test1");
+    }
+
+    @Test
+    public void test1()
+    {
+        String output = getMethodOutput("main");
+        String expect = "100\n90\n80\n70\n60\n50\n40\n30\n20\n10\n0";
+
+        boolean passed = getResults(expect, output, "Running main");
+        assertTrue(passed);
+    }
+
+    @Test
+    public void test2()
+    {
+        String code = getCodeWithoutComments();
+        int count = countOccurences(code, "while") + countOccurences(code, "for");
+        boolean passed = count &gt; 0;
+        getResults("1 loop", count + " loop(s)", "Counting number of loops", passed);
+        assertTrue(passed);
+    }
+}
+      </tests>
+    </program>
+  </activity>
+
+  <activity label="u2b_muc_wc6" xml:id="u2b_muc_wc6">
+    <statement>
+      <p>
+        Finish the code to print 3 rows with 6 <c>*</c> in each row. Be sure to
+        use two loops.
+      </p>
+    </statement>
+
+    <program interactive="activecode" language="java">
+      <code>
+public class Test1
+{
+    public static void main(String[] args)
+    {
+        // Add your code here
+
+    }
+}
+      </code>
+      <tests>
+// ch6ex7muc
+import static org.junit.Assert.*;
+
+import org.junit.*;
+
+import java.io.*;
+
+public class RunestoneTests extends CodeTestHelper
+{
+    public RunestoneTests()
+    {
+        super("Test1");
+    }
+
+    @Test
+    public void test1()
+    {
+        String output = getMethodOutput("main");
+        String expect = "******\n******\n******";
+
+        boolean passed = getResults(expect, output, "Running main");
+        assertTrue(passed);
+    }
+
+    @Test
+    public void test2()
+    {
+        String code = getCodeWithoutComments();
+        int count = countOccurences(code, "while") + countOccurences(code, "for");
+        boolean passed = count == 2;
+        getResults("2 loops", count + " loop(s)", "Counting number of loops", passed);
+        assertTrue(passed);
+    }
+}
+      </tests>
+    </program>
+  </activity>
+
+  <activity label="u2b_muc_wc7" xml:id="u2b_muc_wc7">
+    <statement>
+      <p>
+        Finish the code to print 1 (followed by a newline), then 22 (followed by
+        a newline), and then 333 (followed by a newline). Be sure to use two
+        loops.
+      </p>
+    </statement>
+
+    <program interactive="activecode" language="java">
+      <code>
+public class Test1
+{
+    public static void main(String[] args)
+    {
+        // Add your code here
+
+    }
+}
+      </code>
+      <tests>
+// ch6ex8muc
+import static org.junit.Assert.*;
+
+import org.junit.*;
+
+import java.io.*;
+
+public class RunestoneTests extends CodeTestHelper
+{
+    public RunestoneTests()
+    {
+        super("Test1");
+    }
+
+    @Test
+    public void test1()
+    {
+        String output = getMethodOutput("main");
+        String expect = "1\n22\n333";
+
+        boolean passed = getResults(expect, output, "Running main");
+        assertTrue(passed);
+    }
+
+    @Test
+    public void test2()
+    {
+        String code = getCodeWithoutComments();
+        int count = countOccurences(code, "while") + countOccurences(code, "for");
+        boolean passed = count == 2;
+        getResults("2 loops", count + " loop(s)", "Counting number of loops", passed);
+        assertTrue(passed);
+    }
+}
+      </tests>
+    </program>
+  </activity>
+
+  <activity label="u2b_muc_wc8" xml:id="u2b_muc_wc8">
+    <statement>
+      <p>
+        Finish the code to print 11111, 22222, 33333, 44444, and 55555. Be sure
+        to use two loops.
+      </p>
+    </statement>
+
+    <program interactive="activecode" language="java">
+      <code>
+public class Test1
+{
+    public static void main(String[] args)
+    {
+        // Add your code here
+
+    }
+}
+      </code>
+      <tests>
+// ch6ex9muc
+import static org.junit.Assert.*;
+
+import org.junit.*;
+
+import java.io.*;
+
+public class RunestoneTests extends CodeTestHelper
+{
+    public RunestoneTests()
+    {
+        super("Test1");
+    }
+
+    @Test
+    public void test1()
+    {
+        String output = getMethodOutput("main");
+        String expect = "11111\n22222\n33333\n44444\n55555";
+
+        boolean passed = getResults(expect, output, "Running main");
+        assertTrue(passed);
+    }
+
+    @Test
+    public void test2()
+    {
+        String code = getCodeWithoutComments();
+        int count = countOccurences(code, "while") + countOccurences(code, "for");
+        boolean passed = count &gt;= 2;
+        getResults("2 loops", count + " loop(s)", "Counting number of loops", passed);
+        assertTrue(passed);
+    }
+}
+      </tests>
+    </program>
+  </activity>
+
+  <activity label="u2b_muc_wc9" xml:id="u2b_muc_wc9">
+    <statement>
+      <p>
+        Finish the code to print 11111, 2222, 333, 44, 5. Be sure to use two
+        loops.
+      </p>
+    </statement>
+
+    <program interactive="activecode" language="java">
+      <code>
+public class Test1
+{
+    public static void main(String[] args)
+    {
+        // Add your code here
+
+    }
+}
+      </code>
+      <tests>
+// ch6ex10muc
+import static org.junit.Assert.*;
+
+import org.junit.*;
+
+import java.io.*;
+
+public class RunestoneTests extends CodeTestHelper
+{
+    public RunestoneTests()
+    {
+        super("Test1");
+    }
+
+    @Test
+    public void test1()
+    {
+        String output = getMethodOutput("main");
+        String expect = "11111\n2222\n333\n44\n5";
+
+        boolean passed = getResults(expect, output, "Running main");
+        assertTrue(passed);
+    }
+
+    @Test
+    public void test2()
+    {
+        String code = getCodeWithoutComments();
+        int count = countOccurences(code, "while") + countOccurences(code, "for");
+        boolean passed = count &gt;= 2;
+        getResults("2 loops", count + " loop(s)", "Counting number of loops", passed);
+        assertTrue(passed);
+    }
+}
+      </tests>
+    </program>
+  </activity>
+
+   <activity label="u2b_muc_wc10" xml:id="u2b_muc_wc10">
+    <statement>
+      <p>
+        The <c>ev_div(s, n)</c> method in the <c>NumWorker</c> class should
+        return the number of digits in <c>s</c> (a string representation of a
+        number) that are evenly divisible by <c>n</c>. For example,
+        <c>even_div("6892",3)</c> should return 2 since both 6 and 9 are evenly
+        divisible by 3.
+      </p>
+    </statement>
+
+    <program interactive="activecode" language="java">
+      <code>
+public class NumWorker
+{
+    public static int even_div(String s, int n)
+    {
+        int count = 0;
+
+        // Add your code here
+
+        return count;
+    }
+
+    public static void main(String[] args)
+    {
+        System.out.println(even_div("6892", 3) + " should be 2");
+    }
+}
+      </code>
+      <tests>
+import static org.junit.Assert.*;
+import org.junit.*;
+import java.io.*;
+
+public class RunestoneTests extends CodeTestHelper
+{
+    public RunestoneTests()
+    {
+        super("NumWorker");
+    }
+
+    @Test
+    public void test1()
+    {
+        String output = getMethodOutput("main");
+        String expect = "2 should be 2";
+
+        boolean passed = getResults(expect, output, "Running main");
+        assertTrue(passed);
+    }
+
+    @Test
+    public void test2()
+    {
+        int actual = NumWorker.even_div("45", 2);
+        int expect = 1;
+
+        boolean passed = getResults(expect, actual, "Calling even_div(\"45\", 2)");
+        assertTrue(passed);
+    }
+}
+      </tests>
+    </program>
+  </activity>
+
 </section>
