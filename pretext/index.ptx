@@ -66,18 +66,6 @@
 
     <xi:include href="./Unit0-Getting-Started/toctree.ptx" />
     <xi:include href="./Unit1-Using-Objects-and-Methods/toctree.ptx" />
-    <xi:include href="./Unit2-Selection-and-Iteration/toctree.ptx" />
-    <xi:include href="./Unit3-Class-Creation/toctree.ptx" />
-    <xi:include href="./Unit4-Data-Collections/toctree.ptx" />
-    <xi:include href="./Unit5-Inheritance/toctree.ptx" />
-    <xi:include href="./FreeResponse/toctree.ptx" />
-    <xi:include href="./HiddenFiles/toctree.ptx" />
-    <xi:include href="./MixedFreeResponse/toctree.ptx" />
-    <xi:include href="./Stories/toctree.ptx" />
-    <xi:include href="./posttest/toctree.ptx" />
-    <xi:include href="./Tests/toctree.ptx" />
-    <xi:include href="./TimedTests/toctree.ptx" />
-    <xi:include href="./_hidden/toctree.ptx" />
   </subsection>
 
   <subsection>

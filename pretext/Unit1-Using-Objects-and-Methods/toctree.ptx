@@ -65,25 +65,4 @@
   <xi:include href="./topic-1-3-expressions.ptx" />
   <xi:include href="./topic-1-4-assignment.ptx" />
   <xi:include href="./topic-1-5-casting.ptx" />
-  <xi:include href="./topic-1-6-compound-operators.ptx" />
-  <xi:include href="./topic-1-7-APIs-and-libraries.ptx" />
-  <xi:include href="./topic-1-8-comments.ptx" />
-  <xi:include href="./topic-1-9-method-signatures.ptx" />
-  <xi:include href="./topic-1-10-calling-class-methods.ptx" />
-  <xi:include href="./topic-1-11-Math.ptx" />
-  <xi:include href="./topic-1-12-objects.ptx" />
-  <xi:include href="./topic-1-13-constructors.ptx" />
-  <xi:include href="./topic-1-14-calling-instance-methods.ptx" />
-  <xi:include href="./topic-1-15-strings.ptx" />
-  <xi:include href="./unit1a-summary.ptx" />
-  <xi:include href="./unit1a-practice-toggle-code.ptx" />
-  <xi:include href="./unit1a-practice-coding.ptx" />
-  <xi:include href="./Exercises-basics.ptx" />
-  <xi:include href="./unit1b-summary.ptx" />
-  <xi:include href="./unit1b-practice-toggle-code.ptx"/>
-  <xi:include href="./unit1b-practice-coding.ptx" />
-  <xi:include href="./Exercises-objects.ptx" />
-  <xi:include href="./practice-test-objects.ptx" />
-  <xi:include href="./JavaSwingGUIs.ptx" />
-  <xi:include href="./frq-practice.ptx" />
 </chapter>
