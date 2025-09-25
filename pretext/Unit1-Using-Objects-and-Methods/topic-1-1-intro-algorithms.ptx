@@ -170,6 +170,10 @@ public class RunestoneTests extends CodeTestHelper
       to a Java server to be compiled and run, and the errors and output are
       sent back to be shown in the web page.
     </p>
+
+    <p>
+     Here is a paragraph that I have added after some compacted content. It shouldn't impact the compacted content.
+    </p>
   </subsection>
 
   <subsection>
@@ -422,18 +426,8 @@ public class RunestoneTests extends CodeTestHelper
 
   <subsection>
     <title>Syntax Errors and Debugging</title>
-    <p>
-      <term>Syntax errors</term> are reported to you by the compiler if your
-      Java code is not correctly written. Examples of syntax errors are a
-      semicolon <c>;</c> missing or if the code has a open curly brace <c>{</c>
-      or open quote <c>"</c>, but no close curly brace <c>}</c> or close quote
-      <c>"</c>. Informally, a syntax error is called a <term>bug</term>, and the
-      process of removing errors is called <term>debugging</term>. An early
-      computer science pioneer <url
-      href="https://en.wikipedia.org/wiki/Grace_Hopper"
-      visual="https://en.wikipedia.org/wiki/Grace_Hopper">Grace Hopper</url>
-      documented a real bug, a moth that flew into a computer in 1947!
-    </p>
+
+    <!-- Deleted a paragraph here - should uncompact the item  -->
 
     <figure align="left">
       <caption>Grace Hopper’s log showing a real bug, 1947.</caption>
