@@ -73,6 +73,10 @@
       with a main method:
     </p>
 
+    <p>
+     Here is a paragraph that is added in the middle of a compacted item. Adding it here should result in the item becoming uncompacted
+    </p>
+
     <program language="java">
       <code>
 public class MyClass
