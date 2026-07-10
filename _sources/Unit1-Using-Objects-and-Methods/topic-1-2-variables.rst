@@ -94,7 +94,7 @@ A data type is a set of values (a domain) and a set of operations on them. For e
    :feedback_c: Is an average true or false?
    :feedback_d: While you can use a string to represent a number, using a number type (int or double) is better for doing calculations.
 
-   What type should you use to represent the average grade for a course?
+   What type should you use to represent the average grade for a course? (Choose the best answer.)
 
 .. mchoice:: chooseType2
    :practice: T
@@ -137,21 +137,6 @@ A data type is a set of values (a domain) and a set of operations on them. For e
    :feedback_d: While you can use a string to represent "True" or "False", using a boolean variable would be better for making decisions.
 
    What type should you use to record if it is raining or not?
-
-.. mchoice:: chooseType5
-   :practice: T
-   :answer_a: int
-   :answer_b: double
-   :answer_c: boolean
-   :answer_d: String
-   :correct: b
-   :feedback_a: The integer type (int) can't be used to represent decimal numbers so you couldn't use it if you had any cents.
-   :feedback_b: The double type can be used to represent an amount of money.
-   :feedback_c: Java uses boolean for values that are only true or false.
-   :feedback_d: While you can use a string to represent the amount of money you have it is easier to do calculations on the numeric types (int or double).
-
-   What type should you use to represent the amount of money you have?
-
 
 Declaring Variables in Java
 ---------------------------
@@ -646,3 +631,17 @@ AP Practice
    :feedback_e: Booleans hold a true or false value, not numbers.
 
    Which of the following pairs of declarations are the most appropriate to store a student’s average course grade in the variable GPA and the number of students in the variable numStudents?
+
+.. mchoice:: chooseTypeV2New
+   :practice: T
+   :answer_a: int
+   :answer_b: double
+   :answer_c: boolean
+   :answer_d: String
+   :correct: d
+   :feedback_a: A phone number is not used in calculations, and leading zeros or dashes would be lost in an int.
+   :feedback_b: A phone number is not a decimal quantity, and formatting like dashes cannot be stored in a double.
+   :feedback_c: A phone number is not a true or false value.
+   :feedback_d: A String is right since a phone number can contain leading zeros and dashes and is not used in arithmetic.
+
+   What type should you use to represent a phone number like "555-0123"?
